@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>WebStudio</title>
   </head>
+
   <body>
     <!-- Navigation -->
+
     <header class="header">
       <div class="container">
         <div class="header-container">
@@ -58,9 +60,12 @@
         </div>
       </div>
     </header>
+
     <!-- Main -->
+
     <main>
       <!-- Hero Section -->
+
       <section class="hero-section">
         <div class="container hero-container">
           <h1 class="h1">Effective Solutions for Your Business</h1>
@@ -69,7 +74,9 @@
           </button>
         </div>
       </section>
+
       <!-- Our Advantages Section -->
+
       <section class="section oa-section">
         <div class="container">
           <h2 class="hidden">Our advantages</h2>
@@ -129,7 +136,9 @@
           </ul>
         </div>
       </section>
+
       <!-- What Are We Doing Section -->
+
       <section class="section">
         <div class="container">
           <h2 class="title h2">What are we doing</h2>
@@ -164,7 +173,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Our Team Section -->
+
       <section class="section section-our-team">
         <div class="container">
           <h2 class="title h2">Our Team</h2>
@@ -344,7 +355,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Customers Section -->
+
       <section class="section">
         <div class="container">
           <h2 class="title h2">Customers</h2>
@@ -395,7 +408,9 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
@@ -409,7 +424,7 @@
             </p>
           </div>
           <div class="footer-socials">
-            <p class="f-text">Social media</p>
+            <h2 class="f-title">Social media</h2>
             <ul class="f-socials">
               <li class="socials-item">
                 <a href="" class="f-socials-link">
@@ -441,9 +456,23 @@
               </li>
             </ul>
           </div>
+          <div class="footer-subscribe">
+            <h2 class="f-title">Subscribe</h2>
+            <form class="f-form">
+              <input type="email" class="f-sub-inp" placeholder="E-mail" />
+              <button type="submit" class="button">
+                Subscribe
+                <svg class="f-sub-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -452,8 +481,84 @@
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
+        <form name="contact-form" class="contact-form">
+          <h2 class="modal-title">
+            Leave your contacts and we will call you back
+          </h2>
+          <div class="form-field">
+            <label for="user-name" class="form-label">Name</label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal-input"
+            />
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-person"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="user-phone" class="form-label">Phone</label>
+            <input
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              class="modal-input"
+            />
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-phone"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <label for="user-email" class="form-label">Email</label>
+            <input
+              type="user-email"
+              name="user-email"
+              id="user-email"
+              class="modal-input"
+            />
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-mail"></use>
+            </svg>
+          </div>
+
+          <div class="form-field comment-form-field">
+            <label for="modal-comment" class="form-label">Comment</label>
+            <textarea
+              name="modal-comment"
+              id="modal-comment"
+              placeholder="Text input"
+              class="modal-input comment-input"
+            ></textarea>
+          </div>
+
+          <div class="privacy-policy">
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              id="privacy-policy"
+              class="privacy-policy-checkbox"
+            />
+            <div class="privacy-policy-checkbox-v">
+              <svg class="privacy-policy-checkbox-v-icon">
+                <use href="./images/icons.svg#icon-check-box"></use>
+              </svg>
+            </div>
+            <label for="privacy-policy" class="form-label privacy-policy-text"
+              >I accept the terms and conditions of the
+              <a href="" class="privacy-policy-link">Privacy Policy</a></label
+            >
+          </div>
+
+          <button type="submit" class="button modal-submit">Send</button>
+        </form>
       </div>
     </div>
+
+    <!-- JavaScript -->
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
